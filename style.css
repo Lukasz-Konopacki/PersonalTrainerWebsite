@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Landa';
+    src: url('/fonts/LandasansMedium-ALJ6m.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Nebulous';
+    src: url('/fonts/NebulousRegular-54aV.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+body{
+    font-family: 'Landa';
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.img-shadow{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+/* nav */
+
+.navbar{
+    color: #ccc;
+    letter-spacing: .4rem;
+}
+
+.navbar a{
+    font-size: 3rem;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+
+.navbar a:hover{
+    border: 2px solid #ccc;
+}
+
+/* TopBanner */
+
+.TopBanner{
+    color: #ccc;
+    height: 100vh;
+    background-image: url(/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.TopBanner h1{
+    font-size: 14rem;
+    font-family: 'Nebulous';
+}
+
+.TopBanner h4{
+    font-family: 'Nebulous';
+    font-size: 4rem;
+}
+
+.TopBanner a{
+
+    color: #ccc;
+}
+
+.TopBanner a:hover{
+    color: #aaa;
+}
+
+.TopBanner .quotation a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    letter-spacing: 0.7rem;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.TopBanner .quotation span{
+    font-style: italic;
+    color: #B00000;
+}
+
+
+.TopBanner .social-media i{
+    font-size: 10rem;
+}
