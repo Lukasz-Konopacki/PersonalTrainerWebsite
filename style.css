@@ -43,19 +43,69 @@ body{
 /* nav */
 
 .navbar{
+    background-color: rgba(0, 0, 0, .8);
     color: #ccc;
     letter-spacing: .4rem;
 }
 
-.navbar a{
+.navbar span{
     font-size: 3rem;
-    border: 2px solid transparent;
+    align-items: center;
+    letter-spacing: .5rem;
+    color: white;
+}
+
+.navbar a{
+    text-align: center;
+    font-size: 3rem;
+    color: #ccc;
     transition: .4s;
+    position: relative;
+}
+
+.navbar .active{
+    color: #fff;
 }
 
 .navbar a:hover{
-    border: 2px solid #ccc;
+    color: #262626;
+
 }
+
+a:hover .Anim{
+    transform: scaleY(1);
+}
+
+.Anim{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    background-color: #eeeeee;
+    height: 100%;
+    width: 25%;
+    transform-origin: top;
+    transition: 0.6s transform;
+    transform: scaleY(0);
+    z-index: -1;
+}
+
+.Anim:nth-of-type(2){
+    left: 25%;
+    transition-delay: 0.15s;
+}
+
+.Anim:nth-of-type(3){
+    left: 50%;
+    transition-delay: 0.3s;
+}
+
+.Anim:nth-of-type(4){
+    left: 75%;
+    transition-delay: .45s;
+}
+
 
 /* TopBanner */
 
@@ -78,12 +128,14 @@ body{
 }
 
 .TopBanner a{
-
     color: #ccc;
+    font-size: 10rem;
+    z-index: 0;
+    transition: .6s color;
 }
 
 .TopBanner a:hover{
-    color: #aaa;
+    color: #888;
 }
 
 .TopBanner .quotation a{
@@ -100,7 +152,113 @@ body{
     color: #B00000;
 }
 
+.TopBanner .social-media .instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-.TopBanner .social-media i{
-    font-size: 10rem;
+.TopBanner .social-media .facebook:hover{
+    background: #3b5998;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* About */
+
+.about{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about .picture{
+    position: relative;
+    background-image: url(/img/Mariusz.PNG);
+}
+
+.about .picture::before{
+    position: absolute;
+    content: "";
+    top: 5rem;
+    left: 5rem;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.about .text{
+    margin: 6rem
+}
+
+.about h1{
+    font-size: 14rem;
+    font-family: 'Nebulous';
+}
+
+.about .text p{
+    font-size: 3rem;
+    text-align: justify;
+}
+
+/* Contact */
+
+.contact{
+    background-color: #e3e4e4;
+}
+
+.contact h1{
+    font-size: 14rem;
+    font-family: 'Nebulous';
+}
+
+.contact span{
+    font-size: 5rem;
+    text-align: justify;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+}
+
+
+@media(max-width: 992px){
+
+    .TopBanner .quotation{
+        height: 10vh;
+    }
+
+    .TopBanner .header{
+        height: 80vh;
+    }
+
+    .TopBanner .social-media{
+        height: 10vh;
+    }
+
+    .TopBanner .quotation a{
+        writing-mode: initial;
+        text-orientation: initial;
+    }
+
+    .TopBanner h1{
+        font-size: 7rem;
+    }
+
+    .TopBanner h4{
+        font-size: 2.5rem;
+    }
+
+    .TopBanner .quotation a{
+        letter-spacing: normal;
+        font-size: 2rem;
+    }
+
+    .TopBanner .social-media a{
+        letter-spacing: normal;
+        font-size: 4rem;
+    }
 }
