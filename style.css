@@ -187,10 +187,6 @@ a:hover .Anim{
     z-index: -1;
 }
 
-.about .text{
-    margin: 6rem
-}
-
 .about h1{
     font-size: 14rem;
     font-family: 'Nebulous';
@@ -227,6 +223,11 @@ footer{
 
 @media(max-width: 992px){
 
+    
+html{
+    font-size: 30%; 
+}
+
     .TopBanner .quotation{
         height: 10vh;
     }
@@ -244,21 +245,15 @@ footer{
         text-orientation: initial;
     }
 
-    .TopBanner h1{
-        font-size: 7rem;
-    }
-
-    .TopBanner h4{
-        font-size: 2.5rem;
-    }
-
-    .TopBanner .quotation a{
-        letter-spacing: normal;
-        font-size: 2rem;
-    }
-
     .TopBanner .social-media a{
         letter-spacing: normal;
+    }
+
+    .about .picture::before{
+        display: none;
+    }
+
+    .about .text p{
         font-size: 4rem;
     }
 }
