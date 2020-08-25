@@ -196,6 +196,14 @@ a:hover .Anim {
 }
 
 
+/* Article */
+
+#article h1 {
+    font-size: 10rem;
+    font-family: 'Nebulous';
+}
+
+
 /* Contact */
 
 #contact {
