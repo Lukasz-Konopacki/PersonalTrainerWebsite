@@ -186,12 +186,12 @@ a:hover .Anim {
 }
 
 #about h1 {
-    font-size: 14rem;
+    font-size: 10rem;
     font-family: 'Nebulous';
 }
 
 #about .text p {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: justify;
 }
 
@@ -203,7 +203,7 @@ a:hover .Anim {
 }
 
 #contact h1 {
-    font-size: 14rem;
+    font-size: 10rem;
     font-family: 'Nebulous';
 }
 
@@ -211,6 +211,14 @@ a:hover .Anim {
     font-size: 5rem;
     text-align: justify;
 }
+
+#contact a {
+    text-decoration: none;
+    color: #212529;
+}
+
+
+/* footer */
 
 footer {
     background-color: black;
