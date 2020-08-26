@@ -37,6 +37,11 @@ body {
     z-index: 0;
 }
 
+h1 {
+    font-size: 10rem;
+    font-family: 'Nebulous';
+}
+
 
 /* nav */
 
@@ -116,12 +121,11 @@ a:hover .Anim {
 
 #TopBanner h1 {
     font-size: 14rem;
-    font-family: 'Nebulous';
 }
 
 #TopBanner h4 {
     font-family: 'Nebulous';
-    font-size: 4rem;
+    font-size: 8rem;
 }
 
 #TopBanner a {
@@ -185,22 +189,9 @@ a:hover .Anim {
     z-index: -1;
 }
 
-#about h1 {
-    font-size: 10rem;
-    font-family: 'Nebulous';
-}
-
 #about .text p {
     font-size: 2rem;
     text-align: justify;
-}
-
-
-/* Article */
-
-#article h1 {
-    font-size: 10rem;
-    font-family: 'Nebulous';
 }
 
 
