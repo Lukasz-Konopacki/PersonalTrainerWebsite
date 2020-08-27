@@ -1,257 +1,258 @@
-@font-face {
-    font-family: 'Landa';
-    src: url('./fonts/LandasansMedium-ALJ6m.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nebulous';
-    src: url('./fonts/NebulousRegular-54aV.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: 'Landa';
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-shadow {
-    position: absolute;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-}
-
-h1 {
-    font-size: 10rem;
-    font-family: 'Nebulous';
-}
-
-
-/* nav */
-
-.navbar {
-    background-color: rgba(0, 0, 0, .8);
-    color: #ccc;
-    letter-spacing: .4rem;
-}
-
-.navbar span {
-    font-size: 8rem;
-    align-items: center;
-    letter-spacing: .5rem;
-    color: white;
-}
-
-.navbar a {
-    text-align: center;
-    font-size: 3rem;
-    color: #ccc;
-    transition: .4s;
-    position: relative;
-}
-
-.navbar .active {
-    color: #fff;
-}
-
-.navbar a:hover {
-    color: #262626;
-}
-
-a:hover .Anim {
-    transform: scaleY(1);
-}
-
-.Anim {
-    position: absolute;
-    padding: 0px;
-    margin: 0px;
-    top: 0;
-    left: 0;
-    background-color: #eeeeee;
-    height: 100%;
-    width: 25%;
-    transform-origin: top;
-    transition: 0.6s transform;
-    transform: scaleY(0);
-    z-index: -1;
-}
-
-.Anim:nth-of-type(2) {
-    left: 25%;
-    transition-delay: 0.15s;
-}
-
-.Anim:nth-of-type(3) {
-    left: 50%;
-    transition-delay: 0.3s;
-}
-
-.Anim:nth-of-type(4) {
-    left: 75%;
-    transition-delay: .45s;
-}
-
-
-/* TopBanner */
-
-#TopBanner {
-    color: #ccc;
-    height: 100vh;
-    background-image: url(img/background.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#TopBanner h1 {
-    font-size: 14rem;
-}
-
-#TopBanner h4 {
-    font-family: 'Nebulous';
-    font-size: 8rem;
-}
-
-#TopBanner a {
-    color: #ccc;
-    font-size: 10rem;
-    z-index: 0;
-    transition: .6s color;
-}
-
-#TopBanner a:hover {
-    color: #888;
-}
-
-#TopBanner .quotation a {
-    text-decoration: none;
-    font-size: 2.3rem;
-    letter-spacing: 0.7rem;
-    font-weight: bold;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-}
-
-#TopBanner .quotation span {
-    font-style: italic;
-    color: #B00000;
-}
-
-#TopBanner .social-media .instagram:hover {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-#TopBanner .social-media .facebook:hover {
-    background: #3b5998;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-
-/* About */
-
-#about {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-#about .picture {
-    position: relative;
-    background-image: url(/img/Mariusz.PNG);
-}
-
-#about .picture::before {
-    position: absolute;
-    content: "";
-    top: 5rem;
-    left: 5rem;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: -1;
-}
-
-#about .text p {
-    font-size: 2rem;
-    text-align: justify;
-}
-
-
-/* Contact */
-
-#contact {
-    background-color: #e3e4e4;
-}
-
-#contact h1 {
-    font-size: 10rem;
-    font-family: 'Nebulous';
-}
-
-#contact span {
-    font-size: 5rem;
-    text-align: justify;
-}
-
-#contact a {
-    text-decoration: none;
-    color: #212529;
-}
-
-
-/* footer */
-
-footer {
-    background-color: black;
-    color: white;
-    font-size: 3rem;
-}
-
-@media(max-width: 992px) {
-    html {
-        font-size: 30%;
-    }
-    .navbar a {
-        font-size: 5rem;
-    }
-    #TopBanner .quotation {
-        height: 10vh;
-    }
-    #TopBanner .header {
-        height: 80vh;
-    }
-    #TopBanner .social-media {
-        height: 10vh;
-    }
-    #TopBanner .quotation a {
-        writing-mode: initial;
-        text-orientation: initial;
-    }
-    #TopBanner .social-media a {
-        letter-spacing: normal;
-    }
-    #about .picture::before {
-        display: none;
-    }
-    #about .text p {
-        font-size: 4rem;
-    }
-}
+        @font-face {
+            font-family: 'Landa';
+            src: url('./fonts/LandasansMedium-ALJ6m.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Nebulous';
+            src: url('./fonts/NebulousRegular-54aV.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            font-family: 'Landa';
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .img-shadow {
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+        }
+        
+        h1 {
+            font-size: 10rem;
+            font-family: 'Nebulous';
+        }
+        
+        h5 {
+            font-weight: bold;
+            font-size: 4rem;
+        }
+        
+        p {
+            font-size: 2rem;
+            text-align: justify;
+        }
+        /* nav */
+        
+        .navbar {
+            background-color: rgba(0, 0, 0, .8);
+            color: #ccc;
+            letter-spacing: .4rem;
+        }
+        
+        .navbar span {
+            font-size: 8rem;
+            align-items: center;
+            letter-spacing: .5rem;
+            color: white;
+        }
+        
+        .navbar a {
+            text-align: center;
+            font-size: 3rem;
+            color: #ccc;
+            transition: .4s;
+            position: relative;
+        }
+        
+        .navbar .active {
+            color: #fff;
+        }
+        
+        .navbar a:hover {
+            color: #262626;
+        }
+        
+        a:hover .Anim {
+            transform: scaleY(1);
+        }
+        
+        .Anim {
+            position: absolute;
+            padding: 0px;
+            margin: 0px;
+            top: 0;
+            left: 0;
+            background-color: #eeeeee;
+            height: 100%;
+            width: 25%;
+            transform-origin: top;
+            transition: 0.6s transform;
+            transform: scaleY(0);
+            z-index: -1;
+        }
+        
+        .Anim:nth-of-type(2) {
+            left: 25%;
+            transition-delay: 0.15s;
+        }
+        
+        .Anim:nth-of-type(3) {
+            left: 50%;
+            transition-delay: 0.3s;
+        }
+        
+        .Anim:nth-of-type(4) {
+            left: 75%;
+            transition-delay: .45s;
+        }
+        /* TopBanner */
+        
+        #TopBanner {
+            color: #ccc;
+            height: 100vh;
+            background-image: url(img/background.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        #TopBanner h1 {
+            font-size: 14rem;
+        }
+        
+        #TopBanner h4 {
+            font-family: 'Nebulous';
+            font-size: 8rem;
+        }
+        
+        #TopBanner a {
+            color: #ccc;
+            font-size: 10rem;
+            z-index: 0;
+            transition: .6s color;
+        }
+        
+        #TopBanner a:hover {
+            color: #888;
+        }
+        
+        #TopBanner .quotation a {
+            text-decoration: none;
+            font-size: 2.3rem;
+            letter-spacing: 0.7rem;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        
+        #TopBanner .quotation span {
+            font-style: italic;
+            color: #B00000;
+        }
+        
+        #TopBanner .social-media .instagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        #TopBanner .social-media .facebook:hover {
+            background: #3b5998;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        /* About */
+        
+        #about {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        
+        #about .picture {
+            position: relative;
+            background-image: url(/img/Mariusz.PNG);
+        }
+        
+        #about .picture::before {
+            position: absolute;
+            content: "";
+            top: 5rem;
+            left: 5rem;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: -1;
+        }
+        /* Contact */
+        
+        #contact {
+            background-color: #e3e4e4;
+        }
+        
+        #contact span {
+            font-size: 5rem;
+            text-align: justify;
+        }
+        
+        #contact a {
+            text-decoration: none;
+            color: #212529;
+        }
+        /* training */
+        
+        #training {
+            background-color: #e3e4e4;
+        }
+        
+        #training a {
+            font-size: 2rem;
+            color: white;
+            background-color: #B00000;
+        }
+        /* footer */
+        
+        footer {
+            background-color: black;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        @media(max-width: 992px) {
+            html {
+                font-size: 30%;
+            }
+            .navbar a {
+                font-size: 5rem;
+            }
+            #TopBanner .quotation {
+                height: 10vh;
+            }
+            #TopBanner .header {
+                height: 80vh;
+            }
+            #TopBanner .social-media {
+                height: 10vh;
+            }
+            #TopBanner .quotation a {
+                writing-mode: initial;
+                text-orientation: initial;
+            }
+            #TopBanner .social-media a {
+                letter-spacing: normal;
+            }
+            #about .picture::before {
+                display: none;
+            }
+            #about .text p {
+                font-size: 4rem;
+            }
+        }
