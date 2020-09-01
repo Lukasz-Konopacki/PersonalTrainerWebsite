@@ -28,18 +28,10 @@
             background-size: cover;
         }
         
-        .img-shadow {
-            position: absolute;
-            top: 0;
-            background-color: rgba(0, 0, 0, 0.6);
-            height: 100%;
-            width: 100%;
-            z-index: 0;
-        }
-        
         h1 {
             font-size: 10rem;
             font-family: 'Nebulous';
+            color: #cccccc;
         }
         
         h5 {
@@ -50,6 +42,45 @@
         p {
             font-size: 2rem;
             text-align: justify;
+        }
+        
+        a {
+            color: #ccc;
+            z-index: 0;
+            transition: .6s color;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: #888;
+        }
+        
+        .background {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-image: url("img/background.jpg");
+            z-index: -1;
+        }
+        
+        .img-shadow {
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            width: 100%;
+        }
+        
+        .instagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .facebook:hover {
+            background: #3b5998;
+            -webkit-background-clip: text;
+            color: transparent;
         }
         /* nav */
         
@@ -120,7 +151,7 @@
         #TopBanner {
             color: #ccc;
             height: 100vh;
-            background-image: url(img/background.jpg);
+            /* background-image: url(img/background.jpg); */
             background-position: center;
             background-size: cover;
         }
@@ -132,17 +163,6 @@
         #TopBanner h4 {
             font-family: 'Nebulous';
             font-size: 8rem;
-        }
-        
-        #TopBanner a {
-            color: #ccc;
-            font-size: 10rem;
-            z-index: 0;
-            transition: .6s color;
-        }
-        
-        #TopBanner a:hover {
-            color: #888;
         }
         
         #TopBanner .quotation a {
@@ -159,22 +179,15 @@
             color: #B00000;
         }
         
-        #TopBanner .social-media .instagram:hover {
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        
-        #TopBanner .social-media .facebook:hover {
-            background: #3b5998;
-            -webkit-background-clip: text;
-            color: transparent;
+        #TopBanner a {
+            font-size: 10rem;
         }
         /* About */
         
         #about {
             margin-top: 5rem;
             margin-bottom: 5rem;
+            color: #cccccc;
         }
         
         #about .picture {
@@ -189,29 +202,20 @@
             left: 5rem;
             width: 100%;
             height: 100%;
-            background-color: black;
+            background-color: #cccccc;
             z-index: -1;
         }
         /* Contact */
         
         #contact {
-            background-color: #e3e4e4;
+            color: #cccccc;
         }
         
         #contact span {
             font-size: 5rem;
             text-align: justify;
         }
-        
-        #contact a {
-            text-decoration: none;
-            color: #212529;
-        }
         /* training */
-        
-        #training {
-            background-color: #e3e4e4;
-        }
         
         #training a {
             font-size: 2rem;
