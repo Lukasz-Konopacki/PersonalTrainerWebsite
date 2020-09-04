@@ -205,6 +205,25 @@
             background-color: #cccccc;
             z-index: -1;
         }
+        /* training */
+        
+        #training a {
+            font-size: 2rem;
+            color: white;
+            background-color: #B00000;
+        }
+        /* Article */
+        
+        .fb-post>span {
+            max-width: 100%;
+        }
+        
+        .fb-post iframe {
+            border: 0;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
         /* Contact */
         
         #contact {
@@ -214,13 +233,6 @@
         #contact span {
             font-size: 5rem;
             text-align: justify;
-        }
-        /* training */
-        
-        #training a {
-            font-size: 2rem;
-            color: white;
-            background-color: #B00000;
         }
         /* footer */
         
