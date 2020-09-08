@@ -224,6 +224,14 @@
             margin: 0 auto;
             max-width: 100%;
         }
+        
+        .slick-track {
+            display: flex;
+        }
+        
+        .slick-carousel .card {
+            margin: auto;
+        }
         /* Contact */
         
         #contact {
