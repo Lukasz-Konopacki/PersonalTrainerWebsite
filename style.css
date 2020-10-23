@@ -219,9 +219,9 @@
             margin-bottom: 0px;
         }
         
-        #opinion h5 {
-            font-size: 6rem;
-            margin-bottom: 0px;
+        #opinion i {
+            color: #FFdF00;
+            font-size: 3rem;
         }
         
         #opinion a:hover {
@@ -250,6 +250,12 @@
         }
         /* Article */
         
+        .fb-post {
+            height: 100% !important;
+            display: flex !important;
+            align-items: center;
+        }
+        
         .fb-post>span {
             max-width: 100%;
         }
@@ -257,7 +263,7 @@
         .fb-post iframe {
             border: 0;
             display: block;
-            margin: 0 auto;
+            margin: auto;
             max-width: 100%;
         }
         
@@ -266,7 +272,11 @@
         }
         
         .slick-carousel .card {
-            margin: auto;
+            height: inherit;
+        }
+        
+        .slick-carousel .card .card-body {
+            height: 100%;
         }
         /* Contact */
         
