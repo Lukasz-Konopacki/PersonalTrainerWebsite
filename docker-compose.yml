@@ -1,0 +1,5 @@
+services:
+  express:
+    build: ./
+    ports:
+      - '80:8080'

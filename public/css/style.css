@@ -1,13 +1,13 @@
         @font-face {
             font-family: 'Landa';
-            src: url('./fonts/LandasansMedium-ALJ6m.otf') format('opentype');
+            src: url('fonts/LandasansMedium-ALJ6m.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
         
         @font-face {
             font-family: 'Nebulous';
-            src: url('./fonts/NebulousRegular-54aV.ttf') format('truetype');
+            src: url('fonts/NebulousRegular-54aV.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -59,7 +59,9 @@
             position: fixed;
             height: 100%;
             width: 100%;
-            background-image: url("img/background.jpg");
+            background-image: url("../img/background.jpg");
+            background-size: cover;
+            background-position: center top;
             z-index: -1;
         }
         
@@ -146,8 +148,8 @@
             left: 75%;
             transition-delay: .45s;
         }
+
         /* TopBanner */
-        
         #TopBanner {
             color: #ccc;
             height: 100vh;
@@ -182,8 +184,9 @@
         #TopBanner a {
             font-size: 10rem;
         }
-        /* About */
-        
+
+
+        /* About */ 
         #about {
             margin-top: 5rem;
             margin-bottom: 5rem;
@@ -205,15 +208,15 @@
             background-color: #cccccc;
             z-index: -1;
         }
-        /* training */
-        
+
+        /* training */     
         #training a {
             font-size: 2rem;
             color: white;
             background-color: #B00000;
         }
+
         /* Opinion */
-        
         #opinion h2 {
             font-size: 4rem;
             margin-bottom: 0px;
@@ -248,8 +251,8 @@
             height: 13vw;
             width: 13vw;
         }
+
         /* Article */
-        
         .fb-post {
             height: 100% !important;
             display: flex !important;
@@ -278,8 +281,8 @@
         .slick-carousel .card .card-body {
             height: 100%;
         }
-        /* Contact */
-        
+
+        /* Contact */  
         #contact {
             color: #cccccc;
         }
@@ -288,8 +291,8 @@
             font-size: 5rem;
             text-align: justify;
         }
+
         /* footer */
-        
         footer {
             background-color: black;
             color: white;
